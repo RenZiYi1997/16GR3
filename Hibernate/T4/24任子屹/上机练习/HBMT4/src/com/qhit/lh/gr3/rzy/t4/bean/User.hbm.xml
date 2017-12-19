@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.qhit.lh.gr3.rzy.t3.bean.User" table="t_user" >
+<!-- id属性配置 -->
+<id name="userId" column="userId" type="integer">
+<!-- 取之于员工表自增的配置 -->
+<generator class="foreign">
+<param name="property">emp</param>
+</generator>
+</id>
+<!-- 其他成员属性 -->
+<property name="userName" column="userName" type="string" length="25" not-null="true"></property>
+<property name="password" column="password" type="string" length="25" not-null="true"></property>
+<!-- 一对一关联 -->
+<one-to-one name="emp" class="com.qhit.lh.gr3.rzy.t3.bean.Emp" cascade="all"></one-to-one>
+</class>
+</hibernate-mapping>
