@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.qhit.lh.gr3.rzy.t3.bean.Emp" table="t_emp">
+<!-- id配置 -->
+<id name="empId" column="empId" type="integer">
+<!-- 自增配置 -->
+<generator class="native"></generator>
+</id>
+<!-- 其他成员配置 -->
+<property name="empName" column="empName" type="string"></property>
+<property name="empSex" column="empSex" type="string"></property>
+<property name="phone" column="phone" type="string"></property>
+<property name="address" column="address" type="string"></property>
+<property name="deptId" column="deptId" type="integer" insert="false" update="false"></property>
+<!-- 一对一关联 -->
+<one-to-one name="user" class="com.qhit.lh.gr3.rzy.t3.bean.User" cascade="all"></one-to-one>
+<many-to-one name="dept"  class="com.qhit.lh.gr3.rzy.t3.bean.Dept" column="deptId" lazy="false"></many-to-one>
+</class>
+</hibernate-mapping>
