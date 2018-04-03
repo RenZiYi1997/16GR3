@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/com/qhit/lh/grs/rzy/exam/common/action/UserAction.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/common/bean/PageBean.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/common/interceptor/LoginInterceptor.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/common/utils/RandomUtil.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/kmgl/action/CourseAction.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/kmgl/dao/CourseDaoImpl.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/sjgl/action/PaperAction.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/sjgl/dao/PaperDaoImpl.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/sjgl/service/PaperServiceImpl.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/tkgl/action/QuestionAction.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/tkgl/dao/QuestionDao.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/tkgl/dao/QuestionDaoImpl.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/tkgl/service/QuestionService.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/tkgl/utils/PoiReaderExcel.java=UTF-8
+encoding//src/com/qhit/lh/grs/rzy/exam/tkgl/utils/RandomQuestionsUtils.java=UTF-8
